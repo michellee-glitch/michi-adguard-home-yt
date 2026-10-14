@@ -1,0 +1,42 @@
+! Title: Michi AdGuard Home - Publicidad seleccionada
+! Version: 0.2.0
+! Last modified: 2026-10-14
+! Description: 19 hosts publicitarios exactos; 7 incorporados tras revisar listas de YouTube.
+! No elimina de forma fiable los anuncios dentro de los videos de YouTube.
+! No es una union de todos los filtros ni una garantia de ausencia de fallos.
+! Validacion documental y estatica; pendiente de prueba en TV, PC y Android.
+! Estos hosts ya tienen cobertura en la copia revisada de AdGuard DNS filter.
+! Fuentes y exclusiones: ver FUENTES.md y REVISION-YOUTUBE.md del paquete.
+! No se ejecutan scripts ni se bloquean dominios de reproduccion de YouTube.
+! Cada regla coincide con un hostname exacto, sin sus subdominios.
+! Referencia: https://adguard-dns.io/kb/adguard-home/faq/#are-there-any-known-limitations
+!
+|pagead2.googlesyndication.com^
+|googleads.g.doubleclick.net^
+|securepubads.g.doubleclick.net^
+|pubads.g.doubleclick.net^
+!
+! Microsoft Advertising / Xandr: publicidad y seguimiento publicitario.
+|ib.adnxs.com^
+|secure.adnxs.com^
+!
+! PubMatic: infraestructura publicitaria.
+|ads.pubmatic.com^
+!
+! Samsung: endpoint clasificado como publicidad movil por AdGuard.
+|sspapi-prd.samsungrs.com^
+!
+! Appnext: servidores publicitarios clasificados por AdGuard.
+|global.appnext.com^
+|cdn.appnext.com^
+|api.appnxt.net^
+|apis.appnxt.net^
+!
+! Ampliacion 0.2.0: publicidad de Google, contrastada con AdGuard DNS filter.
+|ad.doubleclick.net^
+|ade.googlesyndication.com^
+|googleads4.g.doubleclick.net^
+|static.doubleclick.net^
+|tpc.googlesyndication.com^
+|safeframe.googlesyndication.com^
+|afs.googlesyndication.com^
