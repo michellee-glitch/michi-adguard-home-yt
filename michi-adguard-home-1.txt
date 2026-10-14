@@ -1,0 +1,30 @@
+! Title: Michi AdGuard Home - Base conservadora
+! Version: 0.1.0
+! Last modified: 2026-10-14
+! Description: Bloqueo DNS de 12 hosts publicitarios concretos. Cobertura limitada.
+! Estado: version inicial; pendiente de prueba en los dispositivos de destino.
+! No elimina de forma fiable los anuncios dentro de los videos de YouTube.
+! Cada regla coincide con un hostname exacto; no incluye sus subdominios.
+! Fuentes y limites: consultar README.md y FUENTES.md del proyecto.
+!
+! Google: AdSense, AdMob y Google Publisher Tag.
+|pagead2.googlesyndication.com^
+|googleads.g.doubleclick.net^
+|securepubads.g.doubleclick.net^
+|pubads.g.doubleclick.net^
+!
+! Microsoft Advertising / Xandr: publicidad y seguimiento publicitario.
+|ib.adnxs.com^
+|secure.adnxs.com^
+!
+! PubMatic: infraestructura publicitaria.
+|ads.pubmatic.com^
+!
+! Samsung: endpoint clasificado como publicidad movil por AdGuard.
+|sspapi-prd.samsungrs.com^
+!
+! Appnext: servidores publicitarios clasificados por AdGuard.
+|global.appnext.com^
+|cdn.appnext.com^
+|api.appnxt.net^
+|apis.appnxt.net^
